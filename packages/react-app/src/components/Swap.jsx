@@ -44,7 +44,6 @@ const makeCall = async (callName, contract, args, metadata = {}) => {
     }
     return result;
   }
-  return undefined;
   console.log("no call of that name!");
 };
 
@@ -102,8 +101,8 @@ function Swap({ selectedProvider, tokenListURI }) {
     const getTokenList = async () => {
       console.log(_tokenListUri);
       try {
-        const tokenListResponse = await fetch(_tokenListUri);
-        const tokenListJson = await tokenListResponse.json();
+        const tokenList = await fetch(_tokenListUri);
+        const tokenListJson = await tokenList.json();
         const filteredTokens = tokenListJson.tokens.filter(function (t) {
           return t.chainId === activeChainId;
         });

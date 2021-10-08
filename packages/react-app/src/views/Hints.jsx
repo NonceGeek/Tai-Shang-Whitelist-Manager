@@ -1,8 +1,10 @@
+/* eslint-disable jsx-a11y/accessible-emoji */
+
 import { utils } from "ethers";
 import { Select } from "antd";
 import React, { useState } from "react";
 import { Address, AddressInput } from "../components";
-import { useTokenList } from "eth-hooks/dapps/dex";
+import { useTokenList } from "../hooks";
 
 const { Option } = Select;
 

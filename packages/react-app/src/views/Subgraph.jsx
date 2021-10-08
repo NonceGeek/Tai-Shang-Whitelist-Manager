@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/accessible-emoji */
 import { gql, useQuery } from "@apollo/client";
 import { Button, Input, Table, Typography } from "antd";
 import "antd/dist/antd.css";
@@ -80,7 +81,7 @@ function Subgraph(props) {
       </div>
       <div style={{ margin: "auto", marginTop: 32 }}>
         Instead, you can use{" "}
-        <a href="https://thegraph.com/docs/about/introduction" target="_blank" rel="noopener noreferrer">
+        <a href="https://thegraph.com/docs/introduction" target="_blank" rel="noopener noreferrer">
           The Graph
         </a>{" "}
         with 🏗 scaffold-eth (
